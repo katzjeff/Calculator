@@ -4,6 +4,8 @@
 :root {
     --ff-main: Gemunu Libre;
     --fw-main: 800;
+
+    
 }
 
 
@@ -16,7 +18,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to left, blue, green);
+    background-color: #1F1308;
 }
 
 .calculator-grid {
@@ -30,9 +32,9 @@ body {
 
 .calculator-grid> button {
     cursor: pointer;
-    /* border-radius: 5px; */
+    border-radius: 2px;
     font-size: 2rem;
-    border: 1px solid white;
+    border: 2px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
 }
@@ -46,22 +48,24 @@ body {
 
 .output {
     grid-column:  1 / -1;
-    background-color: rgba(0,0,0,.75);
+    background-color: #FFCF00;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     word-wrap: break-word;
     word-break: break-all;
 }
 
 .output .previous-operand {
-    color:rgba(255, 255, 255, .75);
-    font-size: 1.6rem;
+    color: #007D07;
+    font-size: 1.4rem;
 }
 
 .output .current-operand {
-    color: aliceblue;
-    font-size: 2.5rem;
+    color: #CF0400;
+    font-size: 3rem;
 }
