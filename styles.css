@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;800&display=swap');
+
+
+:root {
+    --ff-main: Gemunu Libre;
+    --fw-main: 800;
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
+    font-family: Gemunu Libre, sans-serif;
+    font-weight: var(--fw-main);
 }
 
 body {
@@ -21,6 +30,7 @@ body {
 
 .calculator-grid> button {
     cursor: pointer;
+    /* border-radius: 5px; */
     font-size: 2rem;
     border: 1px solid white;
     outline: none;
